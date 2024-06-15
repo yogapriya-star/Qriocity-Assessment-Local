@@ -11,13 +11,7 @@ const remainderRoutes = require('./routes/remainder');
 connection();
 
 app.use(express.json())
-app.use(cors(
-    {
-        origin:["https://qriocity-assessment-local.vercel.app"],
-        methods:["GET","POST","PUT","DELETE"],
-        credentials:true
-    }
-));
+app.use(cors());
 
 app.use("/api/users",userRoutes);
 app.use("/api/auth",authRoutes);

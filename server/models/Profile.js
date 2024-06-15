@@ -29,6 +29,7 @@ const Profile = mongoose.model('Profile', profileSchema);
 
 const validateProfile = (data) => {
   const schema = Joi.object({
+    userId: Joi.string().required().label('User ID'),
     medicalHistory: Joi.string().required().label('Medical History'),
     fitnessLevel: Joi.string().required().label('Fitness Level'),
     dietaryPreferences: Joi.string().required().label('Dietary Preferences'),
