@@ -81,6 +81,10 @@ This project focuses on developing a user onboarding and profile management syst
     npm install
     node index.js
     ```
+5. **Setup MongoDB Connection in (.env) file at Backend:**
+    ```sh
+    DB=MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/mydatabase?retryWrites=true&w=majority
+    ```    
 
 
 ## Usage
